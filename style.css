@@ -39,6 +39,11 @@ body {
     min-height: 100%;
 }
 
+a {
+    white-space: nowrap;
+    text-decoration: none;
+}
+
 #nav-bar {
     display: flex;
     justify-content: space-between;
@@ -135,31 +140,84 @@ body {
 
     height: auto;
     max-width: 400px;
-    border-radius: 50px;
+    /* border-radius: 50px; */
 
 }
 
 #services {
-    height: 100vh;
+    height: 150vh;
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #091324;
     flex-wrap: wrap;
 }
 
-#services div {
-    border-style: solid;
-    border-color: black;
-    background-color: green;
-    border-width: 4px;
-    height: 50%;
-    width: 50%;
+#services > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.main-services-title {
+    text-align: center;
+    font-family: 'Noto Serif', serif, sans-serif, "Helvetica Neue";
+    margin: 16px;
+    color: white;
+
 }
 
 .service-title {
     color: white;
+    white-space: nowrap;
+}
+
+.service-desc {
+    color: white;
+    text-align: center;
+}
+
+.learn-more {
+
+}
+
+.service-image-1, .service-image-2, .service-image-3 {
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border-radius: 50px; */
+}
+
+.service-image-1 {
+    background-image: url(assets/misc/window-cleaning.jpg);
+}
+
+.service-image-2 {
+    background-image: url(assets/misc/gutter-cleaning.jpg);
+}
+
+.service-image-3 {
+    background-image: url(assets/misc/pressure-washing.jpg);
 }
 
 .service-text {
+    color: white;
+}
 
+#projects {
+    height: 100vh;
+}
+
+#before-and-after {
+
+}
+
+.carousel-item {
+    height: 70%;
+    width: 90%;
 }
 
 @media (max-width: 970px) {
@@ -167,3 +225,11 @@ body {
         align-items: flex-start;
     }
 }
+
+/* @media (max-width: 700px) {
+    .service-image-1, .service-image-2, .service-image-3 {
+        background-image: none;
+        height: 0;
+        width: 0
+    }
+} */
