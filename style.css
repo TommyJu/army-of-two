@@ -209,15 +209,25 @@ a {
 
 #projects {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+}
+
+.projects-title {
+    margin: 24px;
 }
 
 #before-and-after {
-
 }
 
-.carousel-item {
-    height: 70%;
-    width: 90%;
+.carousel-item img {
+    height: 80vh;
+    object-fit: contain;
+    object-position: center;
+    overflow: hidden;
 }
 
 @media (max-width: 970px) {
