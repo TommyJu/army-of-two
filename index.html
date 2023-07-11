@@ -14,7 +14,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section id="nav-bar">
+    <!-- Bootstrap navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/logo-transparent-crop.png" alt="Army of Two Logo" class="nav-bar-logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Window Cleaning</a></li>
+                  <li><a class="dropdown-item" href="#">Gutter Cleaning</a></li>
+                  <li><a class="dropdown-item" href="#">Pressure Washing</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Past Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- <section id="nav-bar">
         <img src="assets/logo-transparent-crop.png" alt="Army of Two Logo" class="nav-bar-logo">
         <div class="dropdown">
             <button class="btn dropdown-toggle btn-color" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -26,7 +60,7 @@
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
         </div>
-    </section>
+    </section> -->
     <section id="hero">
         <div class="hero-container">
             <h1 class="hero-title">Vancouver's Exterior Cleaning Service</h1>
@@ -73,24 +107,24 @@
     <section id="projects">
         <h2 class="projects-title">Amazing Results For <span style="color: var(--orange)">Happy Customers</span></h2>
         <!-- Bootstrap carousel -->
-        <div id="before-and-after" class="carousel slide " data-bs-ride="carousel">
+        <div id="before-and-after" class="carousel carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="2000">
+              <div class="carousel-item active" data-bs-interval="3000">
                 <img src="assets/before-and-after/b1.jpg" class="d-block w-100" alt="...">
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-item" data-bs-interval="3000">
                 <img src="assets/before-and-after/a1.jpg" class="d-block w-100" alt="...">
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-item" data-bs-interval="3000">
                 <img src="assets/before-and-after/b2.jpg" class="d-block w-100" alt="...">
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-item" data-bs-interval="3000">
                 <img src="assets/before-and-after/a2.jpg" class="d-block w-100" alt="...">
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-item" data-bs-interval="3000">
                 <img src="assets/before-and-after/b3.jpg" class="d-block w-100" alt="...">
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-item" data-bs-interval="3000">
                 <img src="assets/before-and-after/a3.jpg" class="d-block w-100" alt="...">
               </div>
             </div>

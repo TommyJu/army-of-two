@@ -58,7 +58,7 @@ a {
 
 .nav-bar-logo {
     width: auto;
-    height: 90%;
+    height: 60px;
 }
 
 .call-button {
@@ -210,7 +210,6 @@ a {
 #projects {
     height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     column-gap: 60px;
