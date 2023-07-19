@@ -1,5 +1,5 @@
 /* css reset */
-html, body, div, span, applet, object, iframe,
+/* html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -18,7 +18,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-}
+} */
 
 /* variables */
 
@@ -29,7 +29,7 @@ time, mark, audio, video {
     --orange: #FAB87D;
     --gray: #8A8D92;
     --silver: #F1F3F4;
-
+    font-size: 1.2rem;
 }
 
 html {
@@ -46,6 +46,15 @@ a {
 
 ul {
     list-style-type: none;
+}
+
+/* Refer to body to overwrite Bootstrap's 'reboot' */
+body h2 {
+    font-size: 2rem;
+}
+
+body h3 {
+    font-size: 1.5rem;
 }
 
 #nav-bar {
@@ -65,7 +74,7 @@ ul {
     height: 60px;
 }
 
-.free-estimate {
+/* .estimate-btn {
     text-decoration: none;
     background-color: var(--orange);
     color: black;
@@ -73,23 +82,47 @@ ul {
     margin: 16px;
     font-size: 1.2em;
     border-radius: 50px;
-    /* border-style: solid;
-    border-color: black;
-    border-width: 4px; */
     transition: 0.5s;
     white-space: nowrap;
     text-align: center;
+} */
+
+.learn-btn {
+
 }
 
-.free-estimate:hover {
+/* .estimate-btn:hover {
     color: white;
     background-color: var(--light-blue);
     transition: 0.5s;
-}
+} */
 
-.icon {
-    height: auto;
-    width: 30px;
+.estimate-btn {
+  display:inline-block;
+  background:#e70;
+  color:white;
+  font-size:1.4em;
+  font-weight:bold;
+  padding:.5em .7em;
+  line-height:1;
+  text-decoration:none;
+  border:solid 2px rgba(255,255,255,.45);
+  border-radius:.65em;
+  text-shadow:1px 1px #000;
+  box-shadow: 0px 6px 0 2px #642, 0 2px 0 2px #642;
+  transition:.15s  ease-in;
+  transform-origin:bottom;
+  text-align: center;
+ }
+.estimate-btn:hover {
+  background:#f58502;
+  box-shadow: 0px 7px 0 2px #642, 0 2px 0 2px #642;
+  transform: translate(0px, -1px);
+}
+.estimate-btn:active {
+  box-shadow: 0px 1px 0 1px #642, 0 1px 1px 1px #000;
+  transform: translate(0px, 5px);
+  transition:.08s ease-out;
 }
 
 #hero {
@@ -125,17 +158,24 @@ ul {
 #about {
     /* height: 80vh; */
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    padding: 50px;
+    /* toggle for responsive design */
+    /* flex-wrap: wrap; */
 }
 
 .about-image {
-
     height: auto;
     max-width: 400px;
     /* border-radius: 50px; */
 
+}
+
+#about div > * {
+    margin: 24px;
 }
 
 #services {
@@ -146,13 +186,18 @@ ul {
     align-items: center;
     background-color: #091324;
     flex-wrap: wrap;
+    padding: 50px;
 }
 
 #services img {
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+#services a {
+    text-decoration: none;
 }
 
 #services > div {
@@ -160,6 +205,8 @@ ul {
     align-items: center;
     justify-content: space-between;
     width: 90%;
+    margin: 16px;
+    text-align: center;
 }
 
 .main-services-title {
@@ -170,7 +217,7 @@ ul {
 
 }
 
-#services h3, p {
+#services h3, #services p {
     color: white;
     white-space: nowrap;
 }
@@ -201,7 +248,7 @@ ul {
     /* height: 130vh; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -221,7 +268,16 @@ ul {
 
 #locations {
     background-color: #091324;
+    display: flex;
+    /* toggle for responsive design */
+    /* flex-wrap: wrap; */
+    gap: 16px;
     /* height: 60vh; */
+    padding: 50px;
+}
+
+#locations h2, #locations p {
+    color: white;
 }
 
 #locations img {
@@ -231,8 +287,40 @@ ul {
     filter: invert(100%) sepia(0%) saturate(5584%) hue-rotate(115deg) brightness(121%) contrast(111%);
 }
 
+.cities {
+    color: lightgreen;
+    font-weight: bold;
+    display: flex;
+    gap: 8px;
+    margin: 12px;
+}
+
+.cities div:hover {
+    color: orange;
+    transition: 0.8s;
+}
+
+#reasons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.icon {
+    height: auto;
+    width: 30px;
+    margin-right: 0.3rem;
+    /* to match p element's margin */
+    margin-bottom: 1rem;
+}
+
 .reasons-main-image {
     height: 70vh;
+}
+
+#reasons li {
+    display: flex;
+    align-items: center;
 }
 
 /* .reasons-list img {
