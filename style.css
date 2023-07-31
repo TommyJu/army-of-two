@@ -115,12 +115,12 @@ body h3 {
   text-align: center;
  }
 .estimate-btn:hover {
-  background:#f58502;
-  box-shadow: 0px 7px 0 2px #642, 0 2px 0 2px #642;
+  background: var(--light-blue);
+  box-shadow: 0px 7px 0 2px var(--dark-blue), 0 2px 0 2px var(--dark-blue);
   transform: translate(0px, -1px);
 }
 .estimate-btn:active {
-  box-shadow: 0px 1px 0 1px #642, 0 1px 1px 1px #000;
+  box-shadow: 0px 1px 0 1px var(--dark-blue), 0 1px 1px 1px #000;
   transform: translate(0px, 5px);
   transition:.08s ease-out;
 }
@@ -269,11 +269,10 @@ body h3 {
 #locations {
     background-color: #091324;
     display: flex;
-    /* toggle for responsive design */
-    /* flex-wrap: wrap; */
     gap: 16px;
     /* height: 60vh; */
     padding: 50px;
+    overflow:hidden;
 }
 
 #locations h2, #locations p {
@@ -290,20 +289,18 @@ body h3 {
 .cities {
     color: orange;
     font-weight: bold;
-    display: flex;
-    gap: 8px;
     margin: 12px;
-}
-
-.cities div:hover {
-    color: var(--light-blue);
-    transition: 0.8s;
+    word-spacing: 1.5rem;
 }
 
 #reasons {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+}
+
+#reasons > div {
+    margin: 42px;
 }
 
 .icon {
@@ -328,18 +325,21 @@ body h3 {
     background-position: center;
     background-repeat: none;
     background-size: cover;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 60px;
 }
 
 #steps h3 {
     color: white;
 }
 
-.btn-container {}
+.btn-container {
+    margin: 24px;
+}
 
 #btn1, #btn2, #btn3 {
     height: 70px;
@@ -348,6 +348,7 @@ body h3 {
     border-radius: 70%;
     text-decoration: none;
     border:none;
+    margin: 8px;
 }
 
 #btn1:hover, #btn2:hover, #btn3:hover {
@@ -368,6 +369,11 @@ body h3 {
     border-style: solid;
     border-color: white;
     border-width: 2px;
+    /* padding: 30px; */
+}
+
+.text-container > * {
+    margin: 32px;
 }
 
 /* .reasons-list img {
@@ -378,6 +384,44 @@ body h3 {
 @media (max-width: 970px) {
     .hero-container {
         align-items: flex-start;
+    }
+}
+
+@media (max-width: 1100px) {
+    #about {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1300px) {
+    #services > div {
+        flex-direction: column;
+        margin: 32px;
+        gap: 12px;
+    }
+
+    #services p {
+        white-space: wrap;
+    }
+
+    #locations {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1370px) {
+    #projects {
+        flex-direction: column;
+        gap: 36px;
+        padding: 50px;
+    }
+}
+
+@media (max-width: 840px) {
+    #reasons {
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 24px;
     }
 }
 
