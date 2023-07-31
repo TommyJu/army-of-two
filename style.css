@@ -170,6 +170,7 @@ body h3 {
 .about-image {
     height: auto;
     max-width: 400px;
+    width: 100%;
     /* border-radius: 50px; */
 
 }
@@ -204,8 +205,8 @@ body h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
-    margin: 16px;
+    width: 100%;
+    margin-top: 16px;
     text-align: center;
 }
 
@@ -261,7 +262,7 @@ body h3 {
 
 .carousel-item img {
     height: 90vh;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
     overflow: hidden;
 }
@@ -291,6 +292,7 @@ body h3 {
     font-weight: bold;
     margin: 12px;
     word-spacing: 1.5rem;
+    text-align: center;
 }
 
 #reasons {
@@ -312,7 +314,12 @@ body h3 {
 }
 
 .reasons-main-image {
-    height: 70vh;
+    /* background-image: url("assets/window-cleaning.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; */
+    height: auto;
+    width: 60%;
 }
 
 #reasons li {
@@ -338,7 +345,7 @@ body h3 {
 }
 
 .btn-container {
-    margin: 24px;
+    margin: 24px 0 24px 0;
 }
 
 #btn1, #btn2, #btn3 {
@@ -369,11 +376,16 @@ body h3 {
     border-style: solid;
     border-color: white;
     border-width: 2px;
-    /* padding: 30px; */
+    padding: 30px;
+    width: 70%;
 }
 
 .text-container > * {
     margin: 32px;
+}
+
+#dynamic-header {
+    font-weight: bold;
 }
 
 /* .reasons-list img {
@@ -396,8 +408,8 @@ body h3 {
 @media (max-width: 1300px) {
     #services > div {
         flex-direction: column;
-        margin: 32px;
         gap: 12px;
+        margin-top: 72px;
     }
 
     #services p {
@@ -422,6 +434,56 @@ body h3 {
         flex-direction: column-reverse;
         justify-content: center;
         padding: 24px;
+    }
+
+    .reasons-main-image {
+        width: 100%;
+    }
+}
+/* Next time try using rem for padding */
+@media (max-width: 500px) {
+    :root {
+        font-size: 1rem;
+    }
+
+    #steps {
+        padding: 24px;
+    }
+
+    #projects {
+        padding: 0px;
+    }
+
+    #services {
+        padding: 12px;
+    }
+
+    #about {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 390px) {
+    #services img {
+        height: 240px;
+        width: 240px;
+    }
+}
+
+@media (max-width: 900px) {
+    .text-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    /* decrease spacing within text container */
+    .text-container > * {
+        margin: 6px;
+    }
+    /* Decrease padding on sides of section */
+    #steps {
+        padding: 60px 12px 60px 12px;
     }
 }
 
