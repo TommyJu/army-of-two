@@ -377,7 +377,8 @@ body h3 {
 
 .text-container {
     color: white;
-    background-color: #091324;
+    /* background-color: #091324; */
+    background-color: rgba(0, 0, 0, 0.7);
     border-style: solid;
     border-color: white;
     border-width: 2px;
@@ -429,7 +430,16 @@ footer a:hover {
     transition: 0.4s;
 }
 
+.footer-container-1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
 .footer-container-2 {
+    width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -437,6 +447,53 @@ footer a:hover {
     flex-wrap: wrap;
     white-space: nowrap;
 }
+
+/* classes for other html files other than index.html */
+
+#hero-large {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/hero-background-dark.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.hero-container-visible {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin: 60px;
+
+    border-style: solid;
+    border-color: white;
+    border-width: 4px;
+    padding: 24px;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+.accordion {
+    width: 100%;
+}
+
+.accordion-body {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.accordion-button {
+    background-color: black;
+    color: black;
+}
+
+/* .hero-text-small {
+    font-size: 1rem;
+} */
 
 @media (max-width: 970px) {
     .hero-container {
