@@ -37,7 +37,8 @@ html {
 }
 body {
     min-height: 100%;
-    min-width: 320px;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 a {
@@ -257,15 +258,15 @@ body h3 {
 .projects-text {
     display: flex;
     flex-direction: column;
-    margin: 24px;
+    /* margin: 24px; */
 }
 
 
 .carousel-item img {
     height: 90vh;
+    width: 100%;
     object-fit: cover;
     object-position: center;
-    overflow: hidden;
 }
 
 #locations {
@@ -445,7 +446,6 @@ footer a:hover {
     justify-content: space-between;
     gap: 24px;
     flex-wrap: wrap;
-    white-space: nowrap;
 }
 
 /* classes for other html files other than index.html */
