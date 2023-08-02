@@ -398,6 +398,46 @@ body h3 {
     width: 25px;
 } */
 
+footer {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    flex-wrap: wrap;
+}
+
+.footer-icon {
+    height: auto;
+    width: 30px;
+    margin-right: 0.3rem;
+    /* to match p element's margin */
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+footer a:hover {
+    color: orange;
+    transition: 0.4s;
+}
+
+.footer-container-2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+    white-space: nowrap;
+}
+
 @media (max-width: 970px) {
     .hero-container {
         align-items: flex-start;
