@@ -34,6 +34,7 @@ time, mark, audio, video {
 
 html {
     height: 100%;
+    width: 100%;
 }
 body {
     min-height: 100%;
@@ -258,7 +259,7 @@ body h3 {
 .projects-text {
     display: flex;
     flex-direction: column;
-    /* margin: 24px; */
+    margin: 24px;
 }
 
 
