@@ -32,14 +32,16 @@ time, mark, audio, video {
     font-size: 1.2rem;
 }
 
+body, html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 html {
     height: 100%;
-    width: 100%;
 }
 body {
     min-height: 100%;
-    width: 100%;
-    overflow-x: hidden;
 }
 
 a {
