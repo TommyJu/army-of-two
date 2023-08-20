@@ -131,13 +131,13 @@ body h3 {
 }
 
 #hero {
-    height: 80vh;
+    /* height: 80vh; */
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url(assets/hero-background-dark.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     
 }
@@ -388,6 +388,8 @@ body h3 {
     border-width: 2px;
     padding: 30px;
     width: 70%;
+    height: 80vh;
+    overflow-y: scroll;
 }
 
 .text-container > * {
@@ -451,33 +453,33 @@ footer a:hover {
     flex-wrap: wrap;
 }
 
-/* classes for other html files other than index.html */
+/* classes for sub-pages*/
 
-#hero-large {
-    height: 90vh;
+#hero-sub-page {
+    /* height: 70vh; */
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url(assets/hero-background-dark.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
 }
 
 .hero-container-visible {
+    height: 70vh;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
     margin: 60px;
-
     border-style: solid;
     border-color: white;
     border-width: 4px;
     padding: 24px;
     background-color: rgba(0, 0, 0, 0.7);
-
+    overflow-y: scroll;
 }
 
 .accordion {
@@ -492,6 +494,32 @@ footer a:hover {
 .accordion-button {
     background-color: black;
     color: black;
+}
+
+#images-sub-page {
+    text-align: center;
+    margin: 36px 0 36px 0;
+}
+
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.images-container img {
+    height: 70vh;
+    /* object-fit: cover;
+    object-position: center;*/
+}
+
+.images-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
 }
 
 /* .hero-text-small {
@@ -569,6 +597,10 @@ footer a:hover {
 
     #locations {
         padding: 24px;
+    }
+
+    .hero-container-visible {
+        margin: 24px;
     }
 }
 
