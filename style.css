@@ -585,8 +585,15 @@ footer a:hover {
     }
 
     #steps {
-        padding: 24px;
+        padding: 36px;
     }
+
+    /* decrease button size for steps section */
+    #btn1, #btn2, #btn3 {
+        height: 60px;
+        width: 60px;
+        margin: 3px;
+    }    
 
     #projects {
         padding: 0px;
@@ -605,7 +612,8 @@ footer a:hover {
     }
 
     .hero-container-visible {
-        margin: 24px;
+        font-size: 80%;
+        margin: 32px;
     }
 }
 
@@ -628,13 +636,13 @@ footer a:hover {
 }
 
 @media (max-width: 600px) {
-    /* decrease spacing within text container */
+    /* decrease spacing within text container for steps section*/
     .text-container > * {
         margin: 6px;
     }
-    /* Decrease padding on sides of section */
-    #steps {
-        padding: 60px 12px 60px 12px;
+
+    .text-container {
+        padding: 12px;
     }
 }
 
