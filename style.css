@@ -360,12 +360,20 @@ body h3 {
     margin: 24px 0 24px 0;
 }
 
-#btn1, #btn2, #btn3 {
+/* Overwrite button styling with JS */
+.active-btn { 
+    color: white !important;
+    background-color: black !important;
+}
+
+.btn-container button {
     height: 70px;
     width: 70px;
     font-size: 0.8rem;
     border-radius: 70%;
     text-decoration: none;
+    background-color: white;
+    color: black;
     margin: 8px;
     white-space: nowrap;
     border-style: solid;
@@ -373,15 +381,10 @@ body h3 {
     border-width: 4px;
 }
 
-#btn1:hover, #btn2:hover, #btn3:hover {
+.btn-container button:hover {
     transition: 0.5s;
     background-color: black;
     color: white
-}
-
-.active-btn {
-    color: white;
-    background-color: black;
 }
 
 .text-container {
@@ -588,11 +591,9 @@ footer a:hover {
         padding: 36px;
     }
 
-    /* decrease button size for steps section */
+    /* decrease button spacing for steps section */
     #btn1, #btn2, #btn3 {
-        height: 60px;
-        width: 60px;
-        margin: 3px;
+        margin: 2px;
     }    
 
     #projects {
