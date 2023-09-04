@@ -398,6 +398,7 @@ body h3 {
     width: 70%;
     height: 80vh;
     overflow-y: scroll;
+    font-size: 1.2rem;
 }
 
 .text-container > * {
@@ -488,6 +489,7 @@ footer a:hover {
     padding: 24px;
     background-color: rgba(0, 0, 0, 0.7);
     overflow-y: scroll;
+    font-size: 1.2rem;
 }
 
 .accordion {
@@ -528,6 +530,59 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
     gap: 12px;
+}
+
+#hero-contact-us {
+    /* height: 70vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/misc/contact-us-bg.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-container-contact-us {
+    height: 70vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin: 60px;
+    border-style: solid;
+    border-color: white;
+    border-width: 4px;
+    padding: 24px;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow-y: scroll;
+}
+
+.hero-container-contact-us div {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/* change symbol colour to white */
+.hero-container-contact-us img {
+    filter: invert(100%) sepia(0%) saturate(5584%) hue-rotate(115deg) brightness(121%) contrast(111%);
+}
+
+.hero-container-contact-us a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero-container-contact-us a:hover {
+    transition: 0.5s;
+    color: yellow;
+}
+
+.hero-container-contact-us a, p {
+    font-size: 1.2rem;
 }
 
 /* .hero-text-small {
