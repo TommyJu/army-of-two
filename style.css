@@ -559,7 +559,7 @@ footer a:hover {
     overflow-y: scroll;
 }
 
-.hero-container-contact-us div {
+.hero-container-contact-us > div {
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
@@ -581,8 +581,12 @@ footer a:hover {
     color: yellow;
 }
 
-.hero-container-contact-us a, p {
+.hero-container-contact-us a,.hero-container-contact-us p {
     font-size: 1.2rem;
+}
+
+.hero-container-contact-us span, .hero-container-contact-us h1 {
+    white-space: nowrap;
 }
 
 /* .hero-text-small {
@@ -670,6 +674,14 @@ footer a:hover {
     .hero-container-visible {
         font-size: 80%;
         margin: 32px;
+    }
+
+    .hero-container-contact-us {
+        margin: 24px;
+    }
+
+    .hero-container-contact-us a, p {
+        font-size: 1.1rem;
     }
 }
 
